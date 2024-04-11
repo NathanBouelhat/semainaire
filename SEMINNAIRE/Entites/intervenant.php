@@ -10,13 +10,17 @@ class Intervenant{
     private $url;
     
 
-   function __construct(){
-
+   function __construct($id,$nom,$prenom,$affectation,$url){
+    $this->id = $id;
+    $this->nom = $nom;
+    $this->prenom = $prenom;
+    $this->affectation = $affectation;
+    $this->url = $url;
     
 
    }
    public function getId(){return $this-> id;}
-   public function getnNom(){return $this-> nom;}
+   public function getNom(){return $this-> nom;}
    public function getPrenom(){return $this-> prenom;}
    public function getAffectation(){return $this-> affectation;}
    public function getURL(){return $this-> url;}
